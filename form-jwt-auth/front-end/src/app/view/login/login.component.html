@@ -1,0 +1,11 @@
+<div class="h-screen flex justify-center items-center">
+  <form class="flex flex-col items-center" (ngSubmit)="authenticate(txtUsername, txtPassword)">
+    <h1 class="text-3xl w-full text-center">JWT Authentication</h1>
+    <img src="assets/img/lock.png" class="w-[100px] mt-3">
+    <p class="mt-4">Please enter you login credentials to continue</p>
+    <input #txtUsername required name="username" [(ngModel)]="username" class="border border-gray-300 rounded-md p-3 mt-3 w-full text-center focus:outline-cyan-500" type="text" placeholder="🧔 Enter your username">
+    <input #txtPassword required name="password" [(ngModel)]="password" class="border border-gray-300 rounded-md p-3 mt-3 w-full text-center focus:outline-cyan-500" type="password" placeholder="🔒 Enter your password">
+    <button class="mt-3 p-2 bg-sky-600 w-full rounded-md text-white">LOG IN</button>
+    <div *ngIf="invalid" class="text-red-500 text-center mt-3">Invalid login credentials, try again</div>
+  </form>
+</div>

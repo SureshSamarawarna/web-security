@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+<body>
+<h1>Login</h1>
+<form action="http://localhost:8080/app/api/auth/login" method="POST" enctype="application/x-www-form-urlencoded">
+    <label for="txt-username">Username</label>
+    <input name="username" id="txt-username" type="text" placeholder="Enter the username">
+    <label for="txt-password">Password</label>
+    <input name="password" id="txt-password" type="password" placeholder="Enter the password">
+    <button>Log In</button>
+</form>
+<hr>
+<a href="index.html">Go to home</a>
+</body>
+</html>
